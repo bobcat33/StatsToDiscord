@@ -1,0 +1,18 @@
+main: com.github.bobcat33.StatsToDiscord.minecraft.Main
+name: StatsToDiscord
+version: 1.0
+api-version: 1.18
+author: Bobcat33
+description: Provide a discord server with number of online players
+commands:
+  discordstats:
+    description: Main config command
+    usage: /discordstats [enable | disable | reload | restart]
+    permission: statstodiscord.config
+    aliases: [stats]
+    permission-message: "You don't have the permission required to run this command... Required permission: statstodiscord.config"
+
+
+permissions:
+  statstodiscord.*:
+    default: op
